@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DN Studio Bali</title>
+
+	<!--Font awesome cdn link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<!--Custom CSS File-->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<!--Header starts-->
+	<header class="header">
+
+		<a href="#" class="logo"><i class="fas fa-camera"></i> DNStudio</a>
+
+		<nav class="navbar">
+			<a href="index.html">home</a>
+			<a href="#book">book</a>
+			<a href="#mybooking">my booking</a>
+		</nav> 
+
+		<div id="menu-btn" class="fas fa-bars"></div>
+
+	</header>
+	<!--End of Header-->
+
+	<!--Booking section starts-->
+	<section class="book" id="book">
+
+		<!-- <h1 class="heading"><span>book</span>now</h1> -->
+
+		<div class="row">
+
+			<div class="image">
+				<img src="image/book-image.svg" alt="">
+			</div>
+
+			<form action="" method="post">
+				<h3>make a reservation</h3>
+				   <div class="box">
+					  <p>your name <span>*</span></p>
+					  <input type="text" name="name" maxlength="100" required placeholder="Enter Your Name " class="box">
+				   </div>
+				   <div class="box">
+					  <p>your email <span>*</span></p>
+					  <input type="email" name="email" maxlength="50" required placeholder="Enter Your Email" class="box">
+				   </div>
+				   <div class="box">
+					  <p>your phone number <span>*</span></p>
+					  <input type="number" name="number" maxlength="15" required placeholder="WhatsApp Number" class="box">
+				   </div>
+				   <div class="box">
+					  <p>Number of Persons<span>*</span></p>
+					  <input type="number" name="number" maxlength="15" required placeholder="Number of Persons" class="box">
+				   </div>
+				   <div class="box">
+					  <p>Booking date<span>*</span></p>
+					  <input type="date" name="check_in" class="input" required>
+				   </div>
+				   <div class="box">
+					<p>select session (WITA)<span>*</span></p>
+					<select name="rooms" class="input" required>
+					   <option value="1"> 07:00-9:00</option>
+					   <option value="2">10:00-12:00</option>
+					   <option value="3">13:00-15:00</option>
+					   <option value="4">16:00-18:00</option>
+					   <option value="5">19:00-21:00</option>
+					</select>
+				 </div>
+				  
+				<input  type="submit" value="Confirm Booking" name="book" class="btn">
+			 </form>
+
+		</div>
+
+	</section>
+	<!--Booking section end-->
+
+	<!--My Booking section starts-->
+	<section class="mybooking" id="mybooking">
+
+		<h1 class="heading">my <span>booking</span></h1>
+
+		<div class="box-container">
+		   <div class="box" style="text-align: center;">
+			  <p style="padding-bottom: .5rem; text-transform:capitalize;">no bookings found!</p>
+			  <a href="#book" class="btn">book new</a>
+		   </div>
+		</div>
+	 </section>
+	<!--My Booking section end-->
+
+	<!--Footer Section Starts-->
+	<section class="footer">
+		<div class="share">
+			<a href="https://instagram.com/dn.studiobali/" class="fab fa-instagram"></a>
+		</div>
+
+		<div class="credit">created by <span>Dn Studio Team</span> | all right reserved</div>
+	</section>
+	<!--Footer Section End-->
+
+	
+
+	<!--Custom JS file link-->
+	<script src="js/script.js"></script>
+
+
+</body>   
+</html>
